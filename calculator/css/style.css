@@ -1,0 +1,67 @@
+#calculator {
+  width: 370px;
+  height: 465px;
+  border: 1px solid black;
+  background-color: #eee;
+}
+
+#title {
+  padding: 5px;
+  color: darkgreen;
+  font-weight: bold;
+}
+
+#resultBox {
+  width: 97%;
+  height: 75px;
+  border: 1px solid #aaa;
+  margin: 5px;
+  background-color: #fff;
+}
+
+#formula {
+  color: #777;
+  text-align: right;
+  height: 35px;
+  font-size: 18px;
+  font-family: 'Arial';
+}
+
+#result {
+  text-align: right;
+  vertical-align: bottom;
+  font-size: 32px;
+  font-family: 'Arial';
+}
+
+#keys {
+  width: 97%;
+  height: 345px;
+  border: 1px solid #aaa;
+  margin: 5px;  
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    background-color: lightgrey;
+    padding: 0px 50px;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 30px;
+    height: 29px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.pressed {
+  background-color: #4769a5;
+  text-shadow: -1px 1px #193047;
+}
+
+.lightgrey {
+  background-color: lightgrey;
+}

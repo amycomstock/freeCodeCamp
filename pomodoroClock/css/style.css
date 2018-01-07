@@ -1,0 +1,92 @@
+#pomodoroClock {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title {
+  color: darkred;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#clockProgress {
+  width: 321px;
+  height: 321px;
+  border-radius: 50%;
+  background-color: #FFCCCC;
+/*  border: 10px solid black;
+  background-color: red;
+  clip: rect(0px, 321px, 321px, 160px);*/
+}
+
+#clock {
+  position: absolute;
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  background-color: red;
+  border: 10px solid red;
+  margin-top: 13px;
+  margin-left: 13px;
+}
+
+#sessionType {
+  font-size: 65px;
+  color: green;
+  margin-top: 70px;
+}
+
+.clockText {
+  text-align: center;
+}
+
+#countdown {
+  color: black;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+#timeControls {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.control {
+  display: inline;
+  margin-left: 5px;
+}
+
+label {
+  width: 30px;
+}
+
+input {
+  width: 100px;
+}
+
+#buttonControls {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 23% 23% 23%;
+}
+
+.buttonControl {
+   width: 100px;
+}
+
+#startButton {
+  background-color: green;
+  color: #fff;
+}
+
+#stopButton {
+  background-color: red;
+  color: #fff;
+}
+
+#resetButton {
+  background-color: orange;
+  color: #fff;
+}

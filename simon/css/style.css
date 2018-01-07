@@ -1,0 +1,237 @@
+body {
+  background-color: white;
+}
+
+.inline{
+  display: inline-block;
+}
+
+#simon {
+  width: 452px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title {
+  color: lawngreen;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.container {
+  width: 472px;
+  height:472px;
+  border-radius:50%;
+  position: relative;
+  text-align: center;
+  margin:auto;
+  background-color:#333;
+  top:25px;
+ /* box-shadow: 0px 0px 12px #222;*/
+}
+
+#buttons {
+  position: relative;
+  top:12px; 
+}
+
+.row {
+  margin-bottom:-4px;
+}
+
+.greenButton {
+  border-top-left-radius : 100%;
+  display: inline-block;
+  position  : relative;
+  width:200px;
+  height:200px;
+  background-color : grey;
+  border: 12px solid #333;
+   background-color : #00a74a;
+}
+
+.redButton {
+  border-top-right-radius : 100%;
+  display: inline-block;
+  position  : relative;
+  width:200px;
+  height:200px;
+  background-color : grey;
+  border: 12px solid #333;
+  background-color : #9f0f17;
+}
+
+.yellowButton {
+  border-bottom-left-radius : 100%;
+  display: inline-block;
+  position  : relative;
+  width:200px;
+  height:200px;
+  background-color : grey;
+  border: 12px solid #333;
+  background-color : #cca707;
+}
+
+.blueButton {
+  border-bottom-right-radius : 100%;
+  display: inline-block;
+  position  : relative;
+  width:200px;
+  height:200px;
+  background-color : grey;
+  border: 12px solid #333;
+  background-color : #094a8f;
+}
+
+.yellowButton.light{
+  background-color : #fed93f;
+}
+
+.blueButton.light{
+  background-color : #1c8cff;
+}
+
+.redButton.light{
+  background-color : #ff4c4c;
+}
+
+.greenButton.light{
+  background-color : #13ff7c;
+}
+
+#controls {
+  width:220px;
+  height:220px;
+  position : absolute;
+  border-radius:100%;
+  top:50%;
+  left:50%;
+  margin: -122px 0 0  -122px;
+  background-color:#ECE7EE;
+  border: 12px solid #333;
+}
+
+.controlsMargin {
+  margin-top: -55px;
+}
+
+.gameName{
+  font-family: 'Alfa Slab One', cursive;
+  color : #222;
+  font-size: 3.2em;
+  margin-top : 15px;
+  margin-bottom: 65px;
+}
+
+.gameName .small{
+  font-size : 0.3em;
+  position : relative;
+  top : -20px;
+}
+
+#count {
+  width : 60px;
+  position:relative;
+  text-align:center;
+}
+
+.count{
+  font-family: 'VT323', monospace;
+  color : #DC0D29;
+  padding : 0px;
+  font-size : 2em;
+  width : 50px;
+  background-color: #32050C;
+  position:relative;
+  border : 4px solid #222;
+  border-radius : 10px;
+  margin:auto;
+}
+
+.count-off{
+  color:#430710;
+}
+
+.label {
+  color : #222;
+  font-family : 'Oswald',Arial,sans;
+  font-size:0.7em;
+  margin-top:5px;
+  text-align:center;
+}
+
+.btn-box{
+  width : 50px;
+  position:relative;
+
+  display: inline-block;
+}
+
+.round-btn{
+  width : 20px;
+  height : 20px;
+  position: relative;
+  background-color : yellow;
+  border-radius : 100%;
+  border : 4px solid #444;
+  box-shadow : 0px 2px 3px #222;
+  margin:auto;
+  top : -5px;
+}
+
+.clickable{
+  pointer-events : auto;
+  cursor:pointer;
+}
+
+.led{
+  width:6px;
+  height:6px;
+  background-color: #32050C;
+  border-radius : 100%;
+  position: absolute;
+  left:0;
+  right: 0;
+  margin : auto;
+  border: 2px solid #222;
+  top: -18px;
+}
+
+.strict-mode-on {
+  background-color:#DC0D29;
+}
+
+.row.bot{
+  margin-top: 10px;
+}
+
+.switch-field {
+  height:20px;
+  width:40px;
+  background-color : #222;
+  position:relative;
+  top:5px;
+  border-radius:2px;
+  cursor: pointer;
+}
+
+.switch{
+  height:16px;
+  width: 16px;
+  border-radius:4px;
+  background-color : #3193DE;
+  position:relative;
+  border : 2px solid #333;
+}
+
+.gameOn{
+  left:20px;
+}
+
+.red {  
+  background-color : #FC0102;
+}
+
+
+

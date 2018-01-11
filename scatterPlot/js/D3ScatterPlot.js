@@ -32,11 +32,11 @@ this.d3 = this.d3 || {};
 
   // Public
 
-  function D3ScatterPlot(options) {
+  function D3Scatterplot(options) {
     this.setOptions(options);
   }
 
-  d3spP = D3ScatterPlot.prototype = new Object();
+  d3spP = D3Scatterplot.prototype = new Object();
 
   /**
    * Sets rendering options.
@@ -187,6 +187,6 @@ this.d3 = this.d3 || {};
   }
 
   // Bind globally
-  d3.D3ScatterPlot = D3ScatterPlot; 
+  d3.D3Scatterplot = D3Scatterplot; 
     
 })();

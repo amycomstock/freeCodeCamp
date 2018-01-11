@@ -9,9 +9,9 @@
           textFill: '#1414bf',
           fontSize: '0.9em'
         },
-        d3ScatterPlot = new d3.D3ScatterPlot(options);
+        d3Scatterplot = new d3.D3Scatterplot(options);
 
-    d3ScatterPlot.render(datasetUrl, container);
+        d3Scatterplot.render(datasetUrl, container);
 
   }
 

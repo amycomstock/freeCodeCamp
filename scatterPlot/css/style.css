@@ -1,0 +1,40 @@
+#title {
+  text-align: center;
+  font-weight: bold;
+}
+
+#scatter-plot {
+  text-align: center;
+}
+
+.bar {
+  fill: blue;
+  border: 1px solid white;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.tool-tip {
+  position: absolute;
+  display: none;
+  width: auto;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #6F257F;
+  border-radius: 3px;
+  padding: 14px;
+  font-size: 10px;
+}

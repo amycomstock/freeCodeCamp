@@ -1,0 +1,33 @@
+body {
+  margin : 0
+}
+
+#chart {
+  display: block;
+  margin: auto;
+}
+
+#title {
+  font-size: 32px;
+  text-anchor: middle;
+}
+
+#description {
+  font-size: 15px;
+  text-anchor: middle;
+}
+
+.temperatures, .months {
+  font-size: 12px;
+}
+
+#tooltip {
+  background-color: rgba(187,187,187, 0.7);
+  border-radius: 5px;
+  height: 38px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 110px;
+  text-align: center;
+}

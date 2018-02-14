@@ -7,14 +7,13 @@
   text-align: center;
 }
 
-.tool-tip {
-  position: absolute;
-  display: none;
-  width: auto;
-  height: auto;
-  background: #ffffff;
+.tooltip {
+  width: 50px;
+  background: #000000;
   border: 1px solid #6F257F;
   border-radius: 3px;
   padding: 14px;
   font-size: 10px;
+  color: white;
+  margin-left: 10%;
 }

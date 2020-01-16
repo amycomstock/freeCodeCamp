@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" media="all" href="css/style.css"/>
+
+    </head>
+    <body>
+        <header>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">
+                This is a survey to determine which programming language is most popular.
+            </p>
+        </header>
+
+        <main>
+            <form id="survey-form">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" required placeholder="What is your name?"/>
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" required placeholder="What is your email address?"/>
+                <label id="number-label" for="number">Years of Experience</label>
+                <input id="number" type="number" min="0" max="100" placeholder="How long have you been programming?"/>
+
+                <section>
+                    <p id="age-label" for="age">Age:</p>
+                    <select id="dropdown">
+                        <option>0 - 18</option>
+                        <option>19 - 29</option>
+                        <option>30 - 39</option>
+                        <option>40+</option>
+                    </select>
+                </section>
+
+                <section>
+                    <p id="language">Select your favorite programming language:</p>
+                    <input type="radio" name="language" value="C++">C++
+                    <input type="radio" name="language" value="Java">Java
+                    <input type="radio" name="language" value="JavaScript">JavaScript
+                    <input type="radio" name="language" value="Python">Python
+                </section>
+
+                <section>
+                    <p id="type">Check all that apply to you:</p>
+                    <input type="checkbox" name="type1" value="Gamer">Gamer
+                    <input type="checkbox" name="type2" value="Student">Student
+                    <input type="checkbox" name="type3" value="Professional">Professional Coder
+                </section>
+
+                <section class="form-section column">
+                    <label id="comments-label" for="comments">Additional Comments:</label>
+                    <textarea id="comments" placeholder="Enter additional comments..." rows="10"></textarea>
+                </section>
+
+                <button id="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" media="all" href="css/style.css" />
+  </head>
+
+  <body>
+    <header id="header" class="header">
+      <nav id="navbar">
+        <a href="https://crafxzen.com" targt="_blank"><h1>Crafxzen</h1></a>
+        <header class="nav-header">Custom Potholder Design</header>
+        <a class="nav-link" href="#Show_Grid">Show Grid</a>
+        <a class="nav-link" href="#Number_of_Colors">Number of Colors</a>
+        <a class="nav-link" href="#Pattern">Pattern</a>
+        <a class="nav-link" href="#Colors">Colors</a>
+        <a class="nav-link" href="#Design_Your_Own">Design Your Own</a>
+      </nav>
+    </header>
+
+    <main id="main-doc" class="main-doc">
+      <section id="Show_Grid" class="main-section">
+        <header class="section-header">Show Grid</header>
+        <p>A grid option allows the example potholder to be divided up into squares.</p>
+        <p>The grid lines can be toggled by:</p>
+        <ul>
+          <li>Clicking the Show Grid checkbox to display the grid lines in the example potholder box</li>
+          <li>Clicking the Show Grid checkbox again to turn off the grid lines in the example potholder box</li>
+        </ul>        
+        <pre><code>
+          function onShowGridToggle(evt) {
+            potholderGenerator.toggleGrid(evt.target.checked);
+          }
+        </code></pre>
+      </section>
+      <section id="Number_of_Colors" class="main-section">
+        <header class="section-header">Number of Colors</header class="section-he<ader">
+        <p>A number selector changes the number of colors displayed in the example potholder.</p>
+        <p>The number of potholder colors can be set by:</p>
+        <ul>
+          <li>Increasing the Number of Colors to allow for the selection of more potholder colors</li>
+          <li>Decreasing the Number of Colors to reduce the selection of potholder colors</li>
+        </ul>        
+        <pre><code>
+          function onSetNumColors(evt) {
+            let numColors = evt.target.value;
+          }
+        </code></pre>
+      </section>
+      <section id="Pattern" class="main-section">
+        <header class="section-header">Pattern</header class="section-header">
+        <p>The potholder pattern design can be changed by clicking an item in the Pattern selection box. This will change the pattern design in the example potholder box.</p>
+        <p>For unique patterns, a second pattern selection box will appear. This will save each unique pattern generated, in order to redisplay it later.</p>
+        <pre><code>
+          patternSelector.init();
+        </code></pre>
+      </section>
+      <section id="Colors" class="main-section">
+        <header class="section-header">Colors</header class="section-header">
+        <p>The potholder colors can be set by clicking a color circle. This will display a color palette.</p>
+        <p>Selecting a color from the color palette and clicking the Ok button will add the color to the example potholder box.</p>        
+        <pre><code>function onSelectColor(evt) {
+            let options = {
+                mouseX: evt.clientX,
+                mouseY: evt.clientY
+            };
+            colorPalette.show(evt.target, options);
+        }</code></pre>
+        
+      </section>
+      <section id="Design_Your_Own" class="main-section">
+        <header class="section-header">Design Your Own</header class="section-header">
+        <p>Custom patterns can be created by manually changing each color individually.</p>
+        <p>Each potholder color can be set manually by:</p>
+        <ul>
+          <li>Clicking the Design Your Own checkbox to allow manual setting of each potholder row and column color to create your
+          own pattern</li>
+          <li>Clicking the Design Your Own checkbox again to revert the example potholder back to the currently selected predefined pattern</li>
+        </ul>        
+        <pre><code>
+          function onManuallySelectColors(evt) {
+            initColorSelectors(MAX_COLORS);
+          }</pre>
+        </code>
+      </section>
+    </main>
+  </body>
+</html>
